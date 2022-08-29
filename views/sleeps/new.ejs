@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title>Sleep2Peace</title>
+</head>
+<body>
+    <div>
+        <h1>Your Sleep Cycles</h1>
+    </div>
+    <br>
+
+    </br>
+    <div>
+        <h2>Add Sleep Cycle</h2>
+        <form action="/sleeps" method="POST">
+            <label>Date:
+                <input type="text" name="date">
+            </label><br>
+            <label>Hours Slept:
+                <input type="text" name="hoursSlept">
+            </label><br>
+            <label>Energy Level
+                <select name="energyLevel">
+                    <option value="Refreshed!">Refreshed!</option>
+                    <option value="Well rested">Well rested</option>
+                    <option value="Good enough">Good enough</option>
+                    <option value="A bit tired">A bit tired</option>
+                    <option value="Not enough sleep.">Not enough sleep</option>
+                </select>
+            </label><br>
+            <label>Did you wake up in the middle of the night?
+                <input type="checkbox" name="wokeUp">
+            </label><br>
+            <label>Did you eat anything when you woke up?
+                <input type="checkbox" name="ateFood">
+            </label>
+            <br>
+            <br>
+            <input type="submit" value="Add Sleep">
+        </form>
+    </div>
+    
+</body>
+</html>
