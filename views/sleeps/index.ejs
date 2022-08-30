@@ -3,13 +3,15 @@
 <h1><%= title %></h1>
 <table id="cycles">
     <thead>
-        <th>Date</th>
+        <th>Sleep Cycle</th>
+        <th>Wellness Check</th>
     </thead>
     <tbody>
         <% sleeps.forEach(function(s) { %>
             <tr>
             <td><%= s.date %></td>
-            <td><a href="/sleeps/<%= s._id %>">See more</a></td>
+            <td><a href="/checks">Complete</a></td>
+            <td><a href="/sleeps/<%= s._id %>">See details</a></td>
             </tr>
         <% }); %>
     </tbody>

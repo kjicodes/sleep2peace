@@ -1,0 +1,35 @@
+<%- include('../partials/header') %>
+<div>
+    <h2>Complete Wellness Check</h2>
+    <form id="add-wellnesscheck-form" action="/checks" method="POST">
+        <label>Date:</label>
+        <input type="date" name="date">
+        <br>
+        <label>Did you engage in any physical activity today?
+            <select name="activityCheck">
+                <option value="Full workout!">Full workout!</option>
+                <option value="Moderate">Moderate</option>
+                <option value="No activity">No activity</option>
+            </select>
+        </label>
+        <br>
+        <label>Are you satisfied with today's meals?
+            <select name="mealCheck">
+                <option value="Absolutely">Absolutely</option>
+                <option value="Somewhat satisfied">Somewhat satisfied</option>
+                <option value="Could be better">Could be better</option>
+            </select>
+        </label>
+        <br>
+        <label>How many cups of water did you drink today?</label>
+        <input type="text" name="waterCheck">
+        <br>
+        <label>Describe how you felt today:</label>
+        <textarea name="content"></textarea>
+        <br>
+        <br>
+        <input type="submit" value="Submit Wellness Check">
+    </form>
+</div>
+
+<%- include('../partials/footer') %>
