@@ -1,8 +1,14 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+* {
+  box-sizing: border-box;
 }
 
+body {
+  display: grid;
+  grid-template-rows: center;
+  grid-template-columns: center;
+}
+
+
 a {
-  color: #00B7FF;
+  color: brown;
 }

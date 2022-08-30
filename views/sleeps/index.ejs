@@ -1,0 +1,20 @@
+<%- include('../partials/header') %>
+
+<h1><%= title %></h1>
+<table id="cycles">
+    <thead>
+        <th>Date</th>
+    </thead>
+    <tbody>
+        <% sleeps.forEach(function(s) { %>
+            <tr>
+            <td><%= s.date %></td>
+            <td><a href="/sleeps/<%= s._id %>">See more</a></td>
+            </tr>
+        <% }); %>
+    </tbody>
+</table>
+<br>
+<a href="/sleeps/new">Add New Cycle</a>
+
+<%- include('../partials/footer') %>
