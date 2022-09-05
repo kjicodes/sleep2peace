@@ -44,6 +44,7 @@ Sleep2Peace is a sleep-tracking web application that allows users to record slee
 
 Click here to render the app on Heroku:
 
+https://sleep2peace.herokuapp.com/
 
 
 The following is a link to the Trello board containing the project's planning:
