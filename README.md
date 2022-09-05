@@ -54,7 +54,10 @@ https://trello.com/invite/b/KQUKdVgU/885eedfb66239574e81a3a583effc4c8/sleep2peac
 
 ## Next Steps?
 
-For the future, we will 
+For the future, we want to add more styling, images, and soothing background sounds (nature sounds) to bring better engagement for users while on the app.
+
+
+
 
 
 
