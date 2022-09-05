@@ -1,14 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+
 * {
   box-sizing: border-box;
+  background-color: #FEF3E5;
 }
 
 body {
   display: grid;
   grid-template-rows: center;
-  grid-template-columns: center;
+  grid-template-areas: "nav" "main";
+  font-family: 'Poiret One';
+  background-color: #FEF3E5;
+
+}
+
+main { 
+  grid-area: main;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 
-a {
-  color: brown;
+/* NAV Bar */
+nav {
+  grid-area: nav;
+  background-color: #F981C1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 20px 0 30px;
 }
+
+nav > a {
+  margin: 15px;
+  text-decoration: none;
+  padding: 10px;
+  color: black;
+  background-color: #F981C1;
+}
+
+nav > a:hover {
+  background-color: #FEE8CD;
+  border-radius: 15px;
+  color: black;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+#nav-home {
+  color: white;
+}
+
+
+/* Title */
+h1 {
+  margin: 100px;
+  font-size: 45px;
+  padding: 15px 30px;
+  color: #F981C1;
+  border: 2px solid white;
+  border-radius: 15px;
+  background-color: #FFCE92; 
+  font-family: 'Raleway';
+  font-weight: bold;
+}
+
+#title {
+  color: black;
+  background-color: #FFCE92;
+}
+
+
+
+
+/* NEW Views */
+#new-form {
+  display: grid;
+  grid-gap: 5px;
+}
+
+#record-cycle {
+  border: 1px solid #FFCE92;
+  color: black; 
+  font-family: 'Raleway';
+  background-color: #FFBDC9; 
+  border-radius: 10px;
+  padding: 5px;
+}
+
+#record-cycle:hover {
+  background-color: #FE637F;
+}
+
+.links {
+  color: red;  
+}
+
+.links:hover {
+  background-color: #FFCE92;
+  border-radius: 10px; 
+  color: red;
+}
+
+#add-new-cycle {
+  color: #F981C1;
+  padding: 5px;
+}
+
+#add-new-cycle:hover {
+  background-color:  #FFCE92; 
+  border-radius: 10px;
+}
+
+

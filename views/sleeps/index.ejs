@@ -1,22 +1,28 @@
 <%- include('../partials/header') %>
 
-<h1><%= title %></h1>
-<table id="cycles">
-    <thead>
-        <th>Sleep Cycle</th>
-        <th>Wellness Check</th>
-    </thead>
-    <tbody>
-        <% sleeps.forEach(function(s) { %>
-            <tr>
-            <td><%= s.date %></td>
-            <td><a href="/checks/new">Complete</a></td>
-            <td><a href="/sleeps/<%= s._id %>">See details</a></td>
-            </tr>
+<div>
+    <h2><%= title %></h2>
+    <table id="cycles">
+        <thead>
+            <th>Sleep Cycle</th>
+            <th>Wellness Check</th>
+        </thead>
+        <tbody>
+            <% sleeps.forEach(function(s) { %>
+                <tr>
+                    <td><%= s.date %></td>
+                    <form action="/sleeps/<%= s._id %>?_method=DELETE"
+                    id="delete-form" method="POST">
+                    <button type="submit">X</button>
+                    </form>
+                    <td><a class="links" href="/checks/new/<%= s._id %>">Complete</a></td>
+                    <td><a class="links" href="/sleeps/<%= s._id %>">See details</a></td>
+                </tr>
         <% }); %>
     </tbody>
-</table>
-<br>
-<a href="/sleeps/new">Add New Cycle</a>
+    </table>
+    <br>
+    <a id="add-new-cycle" href="/sleeps/new">Add New Cycle</a>
+</div>
 
 <%- include('../partials/footer') %>

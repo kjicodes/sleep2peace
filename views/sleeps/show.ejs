@@ -1,7 +1,9 @@
 <%- include('../partials/header') %>
+
 <div>
+
   <h2>Sleep Cycle Details</h2>
-  <section id="show-page">
+  <section id="show-sleeps">
     <div>Date: </div>
     <div><%= sleep.date %></div>
     <div>Hours Slept: </div>
@@ -14,6 +16,7 @@
     <div><%= sleep.energyLevels %></div>
   </section>
   <br><br>
+
   <% if (sleep.comments.length) { %>
     <table>
       <thead>
@@ -38,12 +41,10 @@
   <h2>Feedback </h2>
   <form id="add-comment-form" method="POST" action="/sleeps/<%= sleep._id %>/comments">
     <label>Any comments: </label>
-    <textarea name="content"></textarea>
+    <textarea name="thoughts"></textarea>
     <input type="submit" value="Submit New Thoughts">
   </form>
-  
-
-
+</div>
 
 
 <%- include('../partials/footer') %>

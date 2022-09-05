@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title><%= title %></title>
-    <link rel="stylesheet" href="/stylesheets/style.css" />
-  </head>
-  <body>
-    <nav>
-      <a href="">LOGIN</a>
-      <a href="/sleeps" <%- title === 'All Sleeps' ? 'class="active"' : '' %>>My Sleep Cycles</a>
-      <a href="/checks/show" <%- title === 'Wellness' ? 'class="active"' : '' %>>Wellness Checks</a>
-      <a href="/sleeps/new" <%- title === 'Record Cycle' ? 'class="active"' : '' %>>Record Cycle</a>
-    </nav>
-    <h1><%= title %></h1>
-    <p><%= title %> is your #1 guide to tracking your sleep cycles on a daily basis. Our goal is to help promote good quality sleep for all!</p>
-    <a href="/sleeps/new">Record New Cycle</a>
-  </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/stylesheets/style.css" />
+  <title><%= title %></title>
+</head>
+<body>
+  <main>
+      <h1>SLEEP<span id="title">2</span>PEACE</h1>
+      <br>
+      <h2>Welcome. Are you getting enough sleep?</h2>
+      <h3><%= title %> is your #1 guide to tracking your sleep cycles on a daily basis. Our goal is to help promote good quality sleep for all!</h3>
+      <br>
+      <a id="record-cycle" href="/sleeps/new">RECORD SLEEPS</a>
+  </main>
+</body>
 </html>
+
+

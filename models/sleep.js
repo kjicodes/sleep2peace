@@ -1,11 +1,8 @@
 const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
-const commentsSchema = new Schema({
-    thoughts: {
-        type: String,
-        required: true
-    }
+const commentSchema = new Schema({
+    thoughts: { type: String }
 });
 
 const sleepSchema = new Schema ({
@@ -18,7 +15,7 @@ const sleepSchema = new Schema ({
     wokeUp: Boolean,
     ateFood: Boolean,
     energyLevels: String,
-    comments: [commentsSchema]
+    comments: [commentSchema]
 });
 
 module.exports = mongoose.model('Sleep', sleepSchema);

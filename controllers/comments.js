@@ -6,9 +6,10 @@ module.exports = {
 
 function create(req, res) {
     Sleep.findById(req.params.id, function(err, sleep) {
+        console.log(sleep)
         sleep.comments.push(req.body)
         sleep.save(function(err) {
             res.redirect(`/sleeps/${sleep._id}`)
-        })
-    })
-}
+        });
+    });
+};

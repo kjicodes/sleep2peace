@@ -4,7 +4,8 @@ module.exports = {
     index,
     show,
     new: newSleep,
-    create
+    create,
+    delete: deleteSleep
 };
 
 function index(req, res) {
@@ -13,14 +14,16 @@ function index(req, res) {
     });
 };
 
+
 function show(req, res) {
     Sleep.findById(req.params.id, function(err, sleep) {
         res.render('sleeps/show', { title: 'Sleep Cycle', sleep })
     })
-}
+};
 
 function newSleep(req, res) {
-    res.render('sleeps/new', { title: 'Record Cycle' });
+    res.render('sleeps/new', { title: 'Add Sleep Cycle' });
+    // res.redirect('/sleeps')
 };
 
 function create(req, res) {
@@ -32,5 +35,10 @@ function create(req, res) {
         console.log(sleep);
         res.redirect('/sleeps');
     });
+};
+
+function deleteSleep(req, res) {
+    Sleep.deleteOne(req.params.id);
+    res.redirect('/sleeps');
 };
 

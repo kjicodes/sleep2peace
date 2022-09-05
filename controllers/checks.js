@@ -6,15 +6,14 @@ module.exports = {
     create
 };
 
-
 function newCheck(req, res) {
-    Check.find({}, function(err, checks) {
-        res.render('checks/new', { title: 'Yay Wellness Check!', checks })
-    })
+    Sleep.findById(req.params.id, function(err, sleep) {
+        res.render('checks/new', { title: 'Yay Wellness Check!', sleep });
+    });
 };
 
 function create(req, res) {
     Check.create(req.body, function(err, check) {
-        res.redirect('/checks/new')
-    })
+        res.redirect('/checks/new');
+    });
 };

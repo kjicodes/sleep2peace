@@ -1,9 +1,7 @@
 <%- include('../partials/header') %>
 <div>
     <h2>Complete Wellness Check</h2>
-    <form id="add-wellnesscheck-form" action="/checks" method="POST">
-        <label>Date:</label>
-        <input type="date" name="date">
+    <form id="new-form" action="/checks/create/<%= sleep._id %>" method="POST">
         <br>
         <label>Did you engage in any physical activity today?
             <select name="activityCheck">
@@ -28,7 +26,7 @@
         <textarea name="content"></textarea>
         <br>
         <br>
-        <input type="submit" value="Submit Wellness Check">
+        <button type="submit">Submit Wellness Check</button>
     </form>
 </div>
 

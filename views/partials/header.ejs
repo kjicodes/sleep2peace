@@ -4,16 +4,18 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="/stylesheets/style.css" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   <title><%= title %></title>
 </head>
 <body>
   <nav>
-    <a href="" <%- title === 'Login' ? 'class="active"' : '' %>>LOGIN</a>
-    <a href="/" <%- title === 'Home' ? 'class="active"' : '' %>>HOME</a>
-    <a href="/sleeps" <%- title === 'All Sleeps' ? 'class="active"' : '' %>>My Sleep Cycles</a>
-    <a href="/checks/show" <%- title === 'Checks' ? 'class="active"' : '' %>>Wellness Checks</a>
     <a href="/sleeps/new" <%- title === 'Record Cycle' ? 'class="active"' : '' %>>Record Cycle</a>
+    <a href="/sleeps" <%- title === 'All Sleeps' ? 'class="active"' : '' %>>My Sleep Cycles</a>
+    <a id="nav-home" href="/" <%- title === 'Home' ? 'class="active"' : '' %>>HOME</a>
   </nav>
   <main>
+   
+  
     
