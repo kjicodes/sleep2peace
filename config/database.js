@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 const db = mongoose.connection
 
-mongoose.connect('mongodb://localhost/sleeps', {
+mongoose.connect(process.env.DATABASE_URL, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 });

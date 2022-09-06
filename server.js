@@ -5,6 +5,7 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 var methodOverride = require('method-override');
 require('./config/database');
+require('dotenv').config()
 
 var indexRouter = require('./routes/index');
 var sleepsRouter = require('./routes/sleeps');
