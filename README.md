@@ -20,6 +20,7 @@
 
 <img src="imgs-sleep2peace/s2psleeps.png"></img>
 
+
 <img src="imgs-sleep2peace/s2pcheck.png"></img>
 
 
@@ -37,8 +38,10 @@
 - Javascript
 - Node.js
 - Express
-- MongoDB
+- MongoDB & MongoDB Atlas
 - Mongoose
+
+
 
 ## Getting Started
 
@@ -50,6 +53,7 @@ https://sleep2peace.herokuapp.com/
 The following is a link to the Trello board containing the project's planning:
 
 https://trello.com/invite/b/KQUKdVgU/885eedfb66239574e81a3a583effc4c8/sleep2peace
+
 
 
 ## Next Steps?
