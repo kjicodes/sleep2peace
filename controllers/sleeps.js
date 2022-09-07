@@ -10,7 +10,7 @@ module.exports = {
 
 function index(req, res) {
     Sleep.find({}, function(err, sleeps) {
-        res.render('sleeps/index', { title: 'Your Sleep Cycles', sleeps });
+        res.render('sleeps/index', { title: 'My Sleep Cycles', sleeps });
     });
 };
 

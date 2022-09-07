@@ -1,6 +1,6 @@
 # Sleep2Peace
 
-Sleep2Peace is a sleep-tracking web application that allows users to record sleep cycles on a daily basis.
+*Sleep2Peace* is an **interactive, sleep-tracking web application** that allows users to record their sleep cycles on a daily basis.
 
 
 <img src="imgs-sleep2peace/s2phome.png"></img>
