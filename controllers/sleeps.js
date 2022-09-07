@@ -37,8 +37,8 @@ function create(req, res) {
     });
 };
 
-function deleteSleep(req, res) {
-    Sleep.deleteOne(req.params.id);
+async function deleteSleep(req, res) {
+    await Sleep.findByIdAndRemove(req.params.id);
     res.redirect('/sleeps');
 };
 
