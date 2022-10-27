@@ -11,7 +11,6 @@ require('./config/database');
 var indexRouter = require('./routes/index');
 var sleepsRouter = require('./routes/sleeps');
 var commentsRouter = require('./routes/comments');
-var checksRouter = require('./routes/checks');
 
 var app = express();
 
@@ -29,7 +28,6 @@ app.use(methodOverride('_method'));
 app.use('/', indexRouter);
 app.use('/sleeps', sleepsRouter);
 app.use('/comments', commentsRouter);
-app.use('/checks', checksRouter);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

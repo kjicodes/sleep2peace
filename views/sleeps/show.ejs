@@ -1,22 +1,25 @@
 <%- include('../partials/header') %>
 
-<div>
-
+<div class="area">
   <h2>Sleep Cycle Details</h2>
-  <section id="show-sleeps">
-    <div>Date: </div>
-    <div><%= sleep.date %></div>
-    <div>Hours Slept: </div>
-    <div><%= sleep.hoursSlept %></div>
-    <div>Did you wake up in the middle of the night? </div>
-    <div><%= sleep.wokeUp ? 'Yes' : 'No' %></div>
-    <div>Did you grab a snack when you woke up? </div>
-    <div><%= sleep.ateFood ? 'Yes' : 'No' %></div>
-    <div>Energy Levels: </div>
-    <div><%= sleep.energyLevels %></div>
-  </section>
+  <div id="details">
+    <div class="detail">Date: <span><%= sleep.date %></span></div>
+    <div class="detail">Hours Slept: <span><%= sleep.hoursSlept %></span></div>
+    <div class="detail">Did you wake up in the middle of the night? <span><%= sleep.wokeUp ? 'Yes' : 'No' %></span></div>
+    <div class="detail">Did you grab a snack when you woke up? <span><%= sleep.ateFood ? 'Yes' : 'No' %></span></div>
+    <div class="detail">Energy Levels: <span><%= sleep.energyLevels %></span></div>
+  </div>
   <br><br>
 
+  <h2>Any Thoughts? </h2>
+  <br>
+  <form id="add-comment-form" method="POST" action="/sleeps/<%= sleep._id %>/comments">
+    <textarea name="thoughts"></textarea><br>
+    <input type="submit" value="Submit">
+  </form>
+
+  <br><br>
+  <div id="thoughts">
   <% if (sleep.comments.length) { %>
     <table>
       <thead>
@@ -33,18 +36,11 @@
       </tbody>
     </table>
   <% } else { %>
-    <h5>(No thoughts yet)</h5>
+    <h5>No Thoughts Yet</h5>
   <% } %>
+  </div>
 
-  <br>
-  <br>
-  <h2>Feedback </h2>
-  <form id="add-comment-form" method="POST" action="/sleeps/<%= sleep._id %>/comments">
-    <label>Any comments: </label>
-    <textarea name="thoughts"></textarea>
-    <input type="submit" value="Submit New Thoughts">
-  </form>
+
 </div>
-
 
 <%- include('../partials/footer') %>

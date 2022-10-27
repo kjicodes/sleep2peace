@@ -1,32 +1,24 @@
 <%- include('../partials/header') %>
 
-<div>
-    <h2><%= title %></h2>
-    <table id="cycles">
-        <thead>
-            <th></th>
-            <th>Sleep Cycle</th>
-            <th>Wellness Check</th>
-        </thead>
-        <tbody>
-            <% sleeps.forEach(function(s) { %>
-                <tr>
-                    <td>
-                        <form action="/sleeps/<%= s._id %>?_method=DELETE"
-                        id="delete-form" method="POST">
-                        <button type="submit">Delete</button>
-                        </form>
-                    </td>
-                    <td><%= s.date %></td>
-                    <td><a class="links" href="/checks/new/<%= s._id %>">Complete</a></td>
-                    <td><a class="links" href="/sleeps/<%= s._id %>">SEE DETAILS</a></td>
-                
-                </tr>
-            <% }); %>
-        </tbody>
-    </table>
-    <br>
-    <a id="add-new-cycle" href="/sleeps/new">Add New Cycle</a>
+<div class="area">
+  <h2><%= title %></h2>
+  <br>
+  <table id="sleeps">
+    <tbody>
+      <% sleeps.forEach(function(s) { %>
+        <tr>
+          <td><%= s.date %></td>
+          <td><a id="see-details" href="/sleeps/<%= s._id %>">See Details</a></td>
+          <td>
+            <form action="/sleeps/<%= s._id %>?_method=DELETE" method="POST">
+            <button type="submit">Delete?</button>
+            </form>
+          </td>
+        </tr>
+      <% }); %>
+    </tbody>
+  </table>
+  <br><br>
 </div>
 
 <%- include('../partials/footer') %>

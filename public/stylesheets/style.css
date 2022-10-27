@@ -1,32 +1,45 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
 * {
   box-sizing: border-box;
-  background-color: #FEF3E5;
+  background-color: #8CA9D3;
+  color: #F4F2F3;
 }
 
 body {
+  margin: 0;
   display: grid;
   grid-template-rows: center;
   grid-template-areas: "nav" "main";
-  font-family: 'Poiret One';
-  background-color: #FEF3E5;
-
+  font-family: "Montserrat";
 }
 
-main { 
+
+/* Main Area:  */
+body > main { 
   grid-area: main;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: #8CA9D3;
+  padding: 20px;
+  overflow-y: scroll;
+}
+
+.area {
+  border: 3px solid #F4F2F3;
+  border-radius: 15px;
+  background-color: #D89447;
+  padding: 30px; 
+  text-align: center;
 }
 
 
-/* NAV Bar */
+/* Nav Bar: */
 nav {
   grid-area: nav;
-  background-color: #F981C1;
+  background-color: #285185;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -37,83 +50,181 @@ nav > a {
   margin: 15px;
   text-decoration: none;
   padding: 10px;
-  color: black;
-  background-color: #F981C1;
+  color: #F4F2F3;
+  background-color: #285185;
 }
 
 nav > a:hover {
-  background-color: #FEE8CD;
+  background-color: #F4F2F3;
   border-radius: 15px;
-  color: black;
+  color: #013328;
 }
 
 a:link {
   text-decoration: none;
 }
 
-#nav-home {
-  color: white;
+#home {
+  color: #D89447;
+}
+
+#home:hover {
+  color: black;
 }
 
 
-/* Title */
+/* Home Page: */
 h1 {
-  margin: 100px;
-  font-size: 45px;
+  font-size: 40px;
   padding: 15px 30px;
-  color: #F981C1;
-  border: 2px solid white;
+  color: #D89447;
+  border: 6px solid #013328;
   border-radius: 15px;
-  background-color: #FFCE92; 
+  background-color: #013328; 
   font-family: 'Raleway';
   font-weight: bold;
+  text-align: right;
 }
 
 #title {
   color: black;
-  background-color: #FFCE92;
+  background-color: #013328;
 }
 
+h2 {
+  background-color: #D89447; 
+  color: #013328;
+  text-align: right;
+}
 
+h3 {
+  color: black;
+  background-color: #D89447;
+  font-family: "Montserrat"
+}
 
+#record-sleeps {
+  border: 6px solid white;
+  border-radius: 7px;
+  color: #013328;
+  background-color: white; 
+  padding: 5px;
+  font-weight: bold;
+}
 
-/* NEW Views */
+#record-sleeps:hover {
+  color: #D89447;
+}
+  
+/* New Sleep Page: */
 #new-form {
   display: grid;
-  grid-gap: 5px;
 }
 
-#record-cycle {
-  border: 1px solid #FFCE92;
-  color: black; 
-  font-family: 'Raleway';
-  background-color: #FFBDC9; 
-  border-radius: 10px;
-  padding: 5px;
+form > label {
+  background-color: #D89447;
 }
 
-#record-cycle:hover {
-  background-color: #FE637F;
+input {
+  background-color: white;
+  color: black;
 }
 
-.links {
-  color: red;  
+select {
+  background-color: white;
+  color: black;
 }
 
-.links:hover {
-  background-color: #FFCE92;
-  border-radius: 10px; 
+#add-sleep {
+  border: 2px solid white;
+  color: white;
+  background-color: #013328;
+}
+
+#add-sleep:hover {
+  color: #D89447;
+}
+
+
+/* All Sleeps Page: */
+table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+  background-color: #D89447;
+}
+
+td {
+  width: 150px;
+  background-color: #D89447;
+}
+
+#see-details {
+  color: white;
+  background-color: #D89447;
+  text-decoration: underline;
+}
+
+#see-details:hover {
+  color: black;
+}
+
+form {
+  background-color: #D89447;
+}
+
+form > button {
+  background-color: white;
+  color: black;
+  border: 2px solid black;
+  border-radius: 7px;
+}
+
+form > button:hover {
   color: red;
 }
 
-#add-new-cycle {
-  color: #F981C1;
-  padding: 5px;
+
+/* Show Page: */
+#details {
+  padding: 20px;
+  background-color: #D89447;
 }
 
-#add-new-cycle:hover {
-  background-color:  #FFCE92; 
-  border-radius: 10px;
+.detail {
+  background-color: #D89447;
 }
 
+span {
+  color: black;
+  background-color: #D89447;
+  text-align: right;
+}
 
+#add-comment-form {
+  background-color: #D89447;
+}
+
+form > textarea {
+  background-color: white;
+  border: 2px solid black;
+  color: black;
+}
+
+form > input {
+  border: 2px solid white;
+  color: white;
+  background-color: #013328;
+}
+
+form > input:hover {
+  color: #D89447;
+}
+
+#thoughts {
+  background-color: #D89447;
+}
+
+h5 {
+  background-color: #D89447;
+  color: #013328;
+}

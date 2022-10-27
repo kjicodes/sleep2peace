@@ -32,7 +32,6 @@ function create(req, res) {
     const sleep = new Sleep(req.body);
     sleep.save(function(err) {
         if (err) return res.redirect('/sleeps/new');
-        console.log(sleep);
         res.redirect('/sleeps');
     });
 };

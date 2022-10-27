@@ -1,22 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="/stylesheets/style.css" />
-  <title><%= title %></title>
-</head>
-<body>
-  <main>
+<%- include('./partials/header') %>
+
+    <div class="area">
+      <!-- <img src="../public/images/s2p-logo.png" width="200" height="200"> -->
       <h1>SLEEP<span id="title">2</span>PEACE</h1>
+      <br><br>
+      <h3>Are you getting enough sleep?</h3><br>
+      <h3>Welcome to your #1 guide to tracking your sleep cycles on a daily basis. Our main goal is to help promote good quality sleep for all!</h3>
       <br>
-      <h2>Welcome. Are you getting enough sleep?</h2>
-      <h3><%= title %> is your #1 guide to tracking your sleep cycles on a daily basis. Our goal is to help promote good quality sleep for all!</h3>
-      <br>
-      <a id="record-cycle" href="/sleeps/new">RECORD SLEEPS</a>
-  </main>
-</body>
-</html>
+      <a id="record-sleeps" href="/sleeps/new">RECORD SLEEPS</a>
+    </div>
+
+    <%- include('./partials/footer') %>
 
 
