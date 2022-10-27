@@ -9,7 +9,7 @@
 - Javascript
 - Node.js
 - Express
-- MongoDB & MongoDB Atlas
+- MongoDB
 - Mongoose
 - HTML
 - CSS
