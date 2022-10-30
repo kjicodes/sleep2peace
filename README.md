@@ -13,7 +13,6 @@
 - Mongoose
 - HTML
 - CSS
-- Canva
 
 
 
@@ -30,11 +29,10 @@ https://trello.com/invite/b/KQUKdVgU/885eedfb66239574e81a3a583effc4c8/sleep2peac
 
 
 
-## Next Steps - Planned Future Enhancements
-
-Will add a "Wellness Check" section for each sleep cycle to aide in accountability, and further bettering users sleeping habits.
-<br> 
-Images and soothing background sounds (ie. nature sounds) will also be added to bring better engagement for users while on the app.
+## Next Steps
+ 
+- *Add ability for a user to create an account (using OAuth)*
+- *Fixing the "Any Thoughts?" section*
 
 
 
