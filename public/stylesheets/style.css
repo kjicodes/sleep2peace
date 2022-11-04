@@ -22,7 +22,7 @@ body > main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #ECD19C;
+  background-color: #8CA9D3;
   padding: 20px;
   overflow-y: scroll;
 }
