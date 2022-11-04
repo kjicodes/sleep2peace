@@ -23,7 +23,6 @@ function show(req, res) {
 
 function newSleep(req, res) {
     res.render('sleeps/new', { title: 'Add Sleep Cycle' });
-    // res.redirect('/sleeps')
 };
 
 function create(req, res) {

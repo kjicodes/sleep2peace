@@ -1,3 +1,5 @@
+<img src="public/images/s2p-logo.png" width="300" height="auto">
+
 # Sleep2Peace
 
 *Sleep2Peace* is an **interactive, sleep-tracking web application** that allows users to record their sleep cycles on a daily basis.
@@ -29,10 +31,9 @@ https://trello.com/invite/b/KQUKdVgU/885eedfb66239574e81a3a583effc4c8/sleep2peac
 
 
 
-## Next Steps
- 
+Currently working on the app to:
 - *Add ability for a user to create an account (using OAuth)*
-- *Fixing the "Any Thoughts?" section*
+
 
 
 

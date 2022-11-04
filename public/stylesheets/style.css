@@ -110,6 +110,7 @@ form > label > input, select {
 
 .button {
   padding: 5px;
+  border: 2px solid white;
   border-radius: 7px;
   text-decoration: none;
   background-color: #8CA9D3;
