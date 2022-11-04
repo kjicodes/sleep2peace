@@ -1,32 +1,36 @@
 <%- include('../partials/header') %>
 
-<div class="area">
-  <h2>Add Sleep Cycle</h2><br>
-  <form id="new-form" action="/sleeps" method="POST">
-    <label>Date:
-      <input id="input" type="date" name="date">
-    </label><br>
-    <label>Hours Slept:
-      <input id="input" type="number" name="hoursSlept">
-    </label><br>
-    <label>Energy Levels:
-      <select name="energyLevels">
-        <option value="Refreshed!">Refreshed!</option>
-        <option value="Well rested">Well rested</option>
-        <option value="Good enough">Good enough</option>
-        <option value="A bit tired">A bit tired</option>
-        <option value="Not enough sleep.">Not enough sleep</option>
-      </select>
-    </label><br>
-    <label>Did you wake up in the middle of the night?
-      <input type="checkbox" name="wokeUp">
-    </label><br>
-    <label>Did you grab a snack when you woke up?
-      <input type="checkbox" name="ateFood">
-    </label>
-    <br>
-    <input id="add-sleep" type="submit" value="ADD SLEEP">
-  </form>
+<div class="card">
+  <div class="card-body">
+
+    <h2>Add Sleep Cycle</h2><br>
+    <form action="/sleeps" method="POST">
+      <label>Date:
+        <input type="date" name="date">
+      </label><br>
+      <label>Hours Slept:
+        <input type="number" name="hoursSlept">
+      </label><br>
+      <label>Energy Levels:
+        <select name="energyLevels">
+          <option value="Refreshed!">Refreshed!</option>
+          <option value="Well rested">Well rested</option>
+          <option value="Good enough">Good enough</option>
+          <option value="A bit tired">A bit tired</option>
+          <option value="Not enough sleep.">Not enough sleep</option>
+        </select>
+      </label><br>
+      <label>Did you wake up in the middle of the night?
+        <input type="checkbox" name="wokeUp">
+      </label><br>
+      <label>Did you grab a snack when you woke up?
+        <input type="checkbox" name="ateFood">
+      </label>
+      <br>
+      <input class="button" type="submit" value="ADD SLEEP">
+    </form>
+
+  </div>
 </div>
     
     <%- include('../partials/footer') %>

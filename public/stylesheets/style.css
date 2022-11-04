@@ -3,20 +3,20 @@
 
 * {
   box-sizing: border-box;
-  background-color: #ECD19C;
+  font-family: "Montserrat";
   color: #F4F2F3;
 }
 
 body {
   margin: 0;
+  height: 100vh;
   display: grid;
-  grid-template-rows: center;
-  grid-template-areas: "nav" "main";
-  font-family: "Montserrat";
+  grid-template-rows: 70px 1fr;
+  grid-template-areas: 
+    "nav" 
+    "main";
 }
 
-
-/* Main Area:  */
 body > main { 
   grid-area: main;
   display: flex;
@@ -27,25 +27,19 @@ body > main {
   overflow-y: scroll;
 }
 
-.area {
-  margin-left: 150px;
-  margin-right: 150px;
-  border: 3px solid #F4F2F3;
-  border-radius: 15px;
-  background-color: #8CA9D3;
-  padding: 30px; 
-  text-align: center;
-}
-
-
-/* Nav Bar: */
-nav {
+body > nav {
   grid-area: nav;
-  background-color: #285185;
+  background-color: #181F34;
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  padding: 0 20px 0 30px;
+  padding: 20px;
+}
+
+nav > img {
+  width: 70px;
+  height: auto;
+  margin-right: auto;
 }
 
 nav > a {
@@ -53,139 +47,86 @@ nav > a {
   text-decoration: none;
   padding: 10px;
   color: #F4F2F3;
-  background-color: #285185;
 }
 
 nav > a:hover {
   background-color: #F4F2F3;
   border-radius: 15px;
-  color: #013328;
-}
-
-a:link {
-  text-decoration: none;
+  color: black;
 }
 
 #home {
   color: #ECD19C;
 }
 
-#home:hover {
-  color: black;
+div.home-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+div.home-section {
+  padding: 25px;
+}
 
-/* Home Page: */
-h1 {
-  font-size: 40px;
-  padding: 15px 30px;
-  color: #ECD19C;
+div > img {
+  width: 450px;
+  height: auto;
+}
+
+div.card {
+  margin: 20px 50px ;
+  border: 2px solid white;
   border-radius: 15px;
-  background-color: #8CA9D3; 
-  font-family: 'Raleway';
-  font-weight: bold;
-  text-align: center;
-  text-decoration: underline white;
+  outline: 10px solid white;
+  background-color: #181F34;
 }
 
-#title {
-  color: black;
-  background-color: #8CA9D3;
-}
-
-h2 {
-  background-color: #8CA9D3; 
-  color: black;
-  text-align: right;
+div.card-body {
+  margin: 10px;
+  border-radius: 15px;
 }
 
 h3 {
-  color: black;
-  background-color: #8CA9D3;
-  font-family: "Montserrat"
-}
-
-p {
-  background-color: #8CA9D3;
-}
-
-#one {
-  background-color: #8CA9D3; 
-  color: black;
+  color: #8CA9D3;
 }
 
 #record-sleeps {
-  border: 6px solid white;
+  padding: 10px;
   border-radius: 7px;
-  color: black;
-  background-color: white; 
-  padding: 5px;
   font-weight: bold;
+  text-decoration: none;
+  background-color: #ECD19C; 
+  color: black;
 }
 
 #record-sleeps:hover {
-  color: #ECD19C;
+  color: white;
 }
   
-/* New Sleep Page: */
-#new-form {
-  display: grid;
-}
-
-form > label {
-  background-color: #8CA9D3;
-}
-
-input {
-  background-color: white;
+form > label > input, select {
   color: black;
 }
 
-select {
-  background-color: white;
-  color: black;
-}
-
-#add-sleep {
-  border: 6px solid white;
-  border-radius: 7px;
-  color: black;
-  background-color: white; 
+.button {
   padding: 5px;
-  font-weight: bold;
+  border-radius: 7px;
+  text-decoration: none;
+  background-color: #8CA9D3;
+  color: black; 
 }
 
-#add-sleep:hover {
+.button:hover {
   color: #ECD19C;
 }
 
-
-/* All Sleeps Page: */
 table {
   border-collapse: separate;
   border-spacing: 0 15px;
-  background-color: #8CA9D3;
 }
 
 td {
   width: 150px;
-  background-color: #8CA9D3;
-}
-
-#see-details {
-  border: 2px solid black;
-  border-radius: 7px;
-  color: black;
-  background-color: white; 
-  padding: 5px;
-}
-
-#see-details:hover {
-  color: #ECD19C;
-}
-
-form {
-  background-color: #8CA9D3;
 }
 
 form > button {
@@ -199,50 +140,12 @@ form > button:hover {
   background-color: red;
 }
 
-
-/* Show Page: */
 #details {
   padding: 20px;
-  background-color: #8CA9D3;
-}
-
-.detail {
-  background-color: #8CA9D3;
-}
-
-span {
-  color: black;
-  background-color: #8CA9D3;
-  text-align: right;
-}
-
-#add-comment-form {
-  background-color: #8CA9D3;
 }
 
 form > textarea {
   background-color: white;
   border: 2px solid black;
-  color: black;
-}
-
-form > input {
-  border: 2px solid black;
-  border-radius: 7px;
-  color: black;
-  background-color: white; 
-  padding: 5px;
-}
-
-form > input:hover {
-  color: #ECD19C;
-}
-
-#thoughts {
-  background-color: #8CA9D3;
-}
-
-h5 {
-  background-color: #8CA9D3;
   color: black;
 }

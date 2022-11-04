@@ -4,8 +4,8 @@ const sleepsCtrl = require('../controllers/sleeps');
 
 router.get('/', sleepsCtrl.index);
 router.get('/new', sleepsCtrl.new);
-router.post('/', sleepsCtrl.create);
 router.get('/:id', sleepsCtrl.show);
+router.post('/', sleepsCtrl.create);
 router.delete('/:id', sleepsCtrl.delete);
 
 module.exports = router;

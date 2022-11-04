@@ -1,46 +1,46 @@
 <%- include('../partials/header') %>
 
-<div class="area">
-  <h2>Sleep Cycle Details</h2>
-  <div id="details">
-    <div class="detail">Date: <span><%= sleep.date %></span></div>
-    <div class="detail">Hours Slept: <span><%= sleep.hoursSlept %></span></div>
-    <div class="detail">Did you wake up in the middle of the night? <span><%= sleep.wokeUp ? 'Yes' : 'No' %></span></div>
-    <div class="detail">Did you grab a snack when you woke up? <span><%= sleep.ateFood ? 'Yes' : 'No' %></span></div>
-    <div class="detail">Energy Levels: <span><%= sleep.energyLevels %></span></div>
+<div class="card">
+  <div class="card-body">
+    <h2>Sleep Cycle Details</h2>
+    <div>
+      <div>Date: <span><%= sleep.date %></span></div>
+      <div>Hours Slept: <span><%= sleep.hoursSlept %></span></div>
+      <div>Did you wake up in the middle of the night? <span><%= sleep.wokeUp ? 'Yes' : 'No' %></span></div>
+      <div>Did you grab a snack when you woke up? <span><%= sleep.ateFood ? 'Yes' : 'No' %></span></div>
+      <div>Energy Levels: <span><%= sleep.energyLevels %></span></div>
+    </div>
+    <br><br>
+
+    <div class="thoughts">
+      <% if (sleep.comments.length) { %>
+        <table>
+          <thead>
+            <tr>
+              <th>Thoughts</th>
+            </tr>
+          </thead>
+          <tbody>
+            <% sleep.comments.forEach(function(c) { %>
+              <tr>
+                <td><%= c.thoughts %></td>
+              </tr>
+            <% }); %>
+          </tbody>
+        </table>
+      <% } else { %>
+        <h5>No Thoughts Yet</h5>
+      <% } %>
+      </div>
+
+    <h2>Any Thoughts? </h2>
+    <br>
+    <form method="POST" action="/sleeps/<%= sleep._id %>/comments">
+      <textarea name="thoughts"></textarea><br>
+      <input class="button" type="submit" value="Submit">
+    </form>
+
   </div>
-  <br><br>
-
-  <h2>Any Thoughts? </h2>
-  <br>
-  <form id="add-comment-form" method="POST" action="/sleeps/<%= sleep._id %>/comments">
-    <textarea name="thoughts"></textarea><br>
-    <input type="submit" value="Submit">
-  </form>
-
-  <br><br>
-  <div id="thoughts">
-  <% if (sleep.comments.length) { %>
-    <table>
-      <thead>
-        <tr>
-          <th>Thoughts</th>
-        </tr>
-      </thead>
-      <tbody>
-        <% sleep.comments.forEach(function(c) { %>
-          <tr>
-            <td><%= c.thoughts %></td>
-          </tr>
-        <% }); %>
-      </tbody>
-    </table>
-  <% } else { %>
-    <h5>No Thoughts Yet</h5>
-  <% } %>
-  </div>
-
-
 </div>
 
 <%- include('../partials/footer') %>
