@@ -22,21 +22,12 @@
 
 Click here to render the app on Heroku:
 
-https://sleep2peace.herokuapp.com/
+[Go To Sleep2Peace](https://sleep2peace.herokuapp.com/)
 
 
 The following is a link to the Trello board containing the project's planning:
 
 https://trello.com/invite/b/KQUKdVgU/885eedfb66239574e81a3a583effc4c8/sleep2peace
-
-
-
-Currently working on the app to:
-- *Add ability for a user to create an account (using OAuth)*
-
-
-
-
 
 
 
