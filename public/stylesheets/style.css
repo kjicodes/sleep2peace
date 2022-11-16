@@ -87,7 +87,28 @@ div.card-body {
   border-radius: 15px;
 }
 
+div > span {
+  color: #8CA9D3;
+}
+
+h2 {
+  color: #ECD19C;
+}
+
 h3 {
+  color: #8CA9D3;
+}
+
+h5 {
+  color: #8CA9D3;
+}
+
+table > thead > tr > th {
+  font-size: 18px;
+  color: #ECD19C
+}
+
+table > tbody > tr > td {
   color: #8CA9D3;
 }
 
@@ -109,8 +130,8 @@ form > label > input, select {
 }
 
 .button {
-  padding: 5px;
-  border: 2px solid white;
+  padding: 3px;
+  border: solid #8CA9D3;
   border-radius: 7px;
   text-decoration: none;
   background-color: #8CA9D3;
@@ -123,11 +144,16 @@ form > label > input, select {
 
 table {
   border-collapse: separate;
-  border-spacing: 0 15px;
+  border-spacing: 0 30px;
+  padding: 20px;
 }
 
 td {
   width: 150px;
+}
+
+form > label {
+  padding: 10px;
 }
 
 form > button {

@@ -2,22 +2,21 @@
 
 <div class="card">
   <div class="card-body">
-    <h2>Sleep Cycle Details</h2>
+    <h2><%= title %></h2>
     <div>
       <div>Date: <span><%= sleep.date %></span></div>
       <div>Hours Slept: <span><%= sleep.hoursSlept %></span></div>
       <div>Did you wake up in the middle of the night? <span><%= sleep.wokeUp ? 'Yes' : 'No' %></span></div>
       <div>Did you grab a snack when you woke up? <span><%= sleep.ateFood ? 'Yes' : 'No' %></span></div>
       <div>Energy Levels: <span><%= sleep.energyLevels %></span></div>
-    </div>
-    <br><br>
+    </div><br>
 
     <div class="thoughts">
       <% if (sleep.comments.length) { %>
         <table>
           <thead>
             <tr>
-              <th>Thoughts</th>
+              <th>My Thoughts:</th>
             </tr>
           </thead>
           <tbody>
@@ -29,9 +28,9 @@
           </tbody>
         </table>
       <% } else { %>
-        <h5>No Thoughts Yet</h5>
+        <h5>(No Thoughts Yet)</h5>
       <% } %>
-      </div>
+      </div><br>
 
     <h2>Any Thoughts? </h2>
     <br>

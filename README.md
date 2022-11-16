@@ -8,7 +8,7 @@
 
 ## Technologies Used
 
-- Javascript
+- JavaScript
 - Node.js
 - Express
 - MongoDB
