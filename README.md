@@ -22,7 +22,7 @@
 
 Click here to render the app on Heroku:
 
-[Go To Sleep2Peace](https://sleep2peace.herokuapp.com/)
+[Go To Sleep2Peace](https://sleep2peace-d313cb03f389.herokuapp.com/)
 
 
 The following is a link to the Trello board containing the project's planning:
